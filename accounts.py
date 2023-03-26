@@ -1,16 +1,7 @@
-#program that reads in a 10 character account number
-#and outputs the account nmber with only the last 4 digit showing.
+#program that reads in a 10 character account number and outputs the account nmber with only the last 4 digit showing.
+#Extra: Modify the program to deal with account numbers of any length
+
 #Author: Francesco Troja
-
-
-#basic code that will Only show the last 4 digits of numbers of any length
-bank_account = input("Please enter an 10 digit account number: ")
-account_length = len(bank_account)
-
-number_to_hide = account_length - 4
-number_to_keep = bank_account[number_to_hide:]
-print("X" * number_to_hide + number_to_keep)
-
 
 
 #extra: will always show the 40% of numbers of any length
