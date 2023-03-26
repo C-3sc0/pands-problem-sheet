@@ -3,16 +3,25 @@
 #Author: Francesco Troja
 
 
-#https://runestone.academy/ns/books/published/thinkcspy/MoreAboutIteration/NewtonsMethod.html
-#https://tutorialsinhand.com/Articles/python-program-to-find-square-root-of-a-number-using-newton-square-root-formula.aspx#:~:text=If%20a%20given%20number%20is,correct%20square%20root%20of%20N.
-def sqrt(n):
-    approx = 0.5 * n
-    better = 0.5 *(approx + n/approx)
-    while better != approx:
-        approx = better
-        better = 0.5 *(approx + n/approx)
-    return approx
+
+number = float(input('"Please enter a positive floating-point number: '))
+
+if number < 0:
+    number = abs(number)
+    print (f"Perhaps you meant {number}")
 
 
-n = float(input("Please enter a positive number: "))
-print (f"the square root of {n} is approx. {round(sqrt(n),1)}") #per round() https://pythonhow.com/how/limit-floats-to-two-decimal-points/#:~:text=To%20limit%20a%20float%20to,resulting%20in%20the%20value%203.14.
+def sqrt(number):
+    #k is the number tht we want to root.
+    #guess represents an initial guess for the square root.
+    k = number
+    guess = k / 2.0
+    #0.001 is the tolerance level for the approximation.
+    while abs(guess * guess - k) >= 0.001:
+        #the function updates the value of guess using the Newton-Raphson formula.
+        guess = guess - (guess ** 2 - k) / (2 * guess)
+    return guess
+
+
+sqrt(number)
+print (f"the square root of {number} is approx. {round(sqrt(number),3)}")
