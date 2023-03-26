@@ -11,7 +11,7 @@ mean = 5
 standard_deviation = 2
 value = np.random.normal (mean,standard_deviation, 1000)
 
-x = np.arange (0, 10, 1)
+x = np.arange (0, 11, 1)
 h = x**3
 
 font = {"family" : "papyrus", "color" : "Black", "size" : 15}
