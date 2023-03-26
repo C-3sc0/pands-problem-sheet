@@ -32,10 +32,11 @@ This program, when run, will show the message "Hello World!". It serves as a sta
 >The output is presented with a € sign and decimal point separating the euro and cent values of the amount
 
 This program is designed to perform basic currency calculations.
-The program's limitation is that it does not verify or check the user's input to ensure that the inputted values are indeed legitimate money amounts. It does not, for example, verify that the input numbers are non-negative integers or that they reflect valid monetary values.
-To resolve this problem, a while loop[^1] has been added to ask the user to enter a valid non-negative number after entering a negative amount. This guarantees that the program only operates on valid monetary values and returns the correct result. 
 
-One of the challenges of this program was finding a way to output the € sign. After a research on the web I found helpful information on Stack Overflow[^2] website whch offered various opton to solve the problem. I choose to incorporate the € Unicode glyph number: 
+The program's limitation is that it does not verify or check the user's input to ensure that the inputted values are indeed legitimate money amounts. It does not, for example, verify that the input numbers are non-negative integers or that they reflect valid monetary values.
+To resolve this problem, a *while* *loop*[^1] has been added to ask the user to enter a valid non-negative number after entering a negative amount. This guarantees that the program only operates on valid monetary values and returns the correct result. 
+
+One of the challenges of this program was finding a way to output the *€* *sign*. After a research on the web I found helpful information on **Stack** **Overflow**[^2] website whch offered various opton to solve the problem. I choose to incorporate the € Unicode glyph number: 
 ```
 \u20ac
 ```
@@ -49,7 +50,7 @@ into my code.
 > Extra: Modify the program to deal with account numbers of any length
 
 This program is designed to show the last 4 digits of a 10 digit bank account number, replacing the first 6 digits with an 'X'[^3]. However, the program's limitation was that it could not display the account numbers of any length, as it always showed only the last 4 digits. To overcome this limitation and fulfill the extra requirement, a different approach was adopted taking the percentages as reference.
-Instead of always displaying the last 4 digits, the program now shows 40% of the total digits in the account number and replaces the remaining digits with "X" characters. For example, if the account number is "4567894561", only the first 40% (i.e., "XXXXXX4561") will be displayed. This approach enables the program to handle account numbers of any length, making it more flexible and versatile.
+Instead of always displaying the last 4 digits, the program now shows 40% of the total digits in the account number and replaces the remaining digits (the remaining 60%) with "X" characters. For example, if the account number is "4567894561", only the first 40% (i.e., "XXXXXX4561") will be displayed. This approach enables the program to handle account numbers of any length, making it more flexible and versatile.
 
 
 
@@ -93,9 +94,9 @@ To round the float number to 3 decimal points, the *round ()*[^7] has been used.
 >Write a program that reads in a text file and outputs the number of e's it contains.
 
 This program needs users to provide the file name as an argument in the command line in order to view a particular text file.
-To ensure that the requested file is in the same directory as the program, the sys method was imported. Using the sys.argv[1] variable, it is defined that the filename is second argument when calling a program ( sys.argv[0] is the program we are trying to start).
-To open the requested file for reading, the open(filename, 'r') function is used.
-To count occurrences of both the lowercase letter 'e' and the uppercase letter 'E', a for loop was utilized in combination with conditional statements using "if". 
+To ensure that the requested file is in the same directory as the program, the *sys* *method* was imported. Using the *sys.argv[1]* variable, it is defined that the filename is second argument when calling a program (*sys.argv[0]* is the program we are trying to start).
+To open the requested file for reading, the *open(filename, 'r')* function is used.
+To count occurrences of both the lowercase letter 'e' and the uppercase letter 'E', a *for* *loop* was utilized in combination with conditional statements *"if"*. 
 
 ---
 
@@ -107,9 +108,9 @@ To count occurrences of both the lowercase letter 'e' and the uppercase letter '
 
 Like the Square root tasks, prior to crack the code, I spent a few hours of study to acquire a better grasp of its mechanics. Throughout this study, I examined a variety of sources to help me understand it better.
 
-To do the plot libraries numpy and matplotlib.pyplot had to be imported.
-Normal distrbution was found using the random.normal() functon, while range for the h(x)=x3 function was found using the arange() function from numpy library.
-The title, and both the x and y axis were labeled using the functions title(), xlabel() and ylabel() respectively from the matplotlib.pyplot library.
+To do the plot libraries numpy and *matplotlib.pyplot* had to be imported.
+Normal distrbution was found using the *random.normal()* functon[^8], while range for the *h(x)=x3* function was found using the *arange()* function from numpy library[^9].
+The title, and both the x and y axis were labeled using the functions *title()*, *xlabel()* and *ylabel()* respectively from the matplotlib.pyplot library[^10].
 The output of this task for the user is a saved image of the plot in the same directory (folder) as the program creating the plot.
 
 ---
@@ -122,6 +123,9 @@ The output of this task for the user is a saved image of the plot in the same di
 [^5]: [w3schools](https://www.w3schools.com/python/python_datetime.asp) helps in research and understand how to implement the datetime module.
 [^6]: [geeksforgeeks](https://www.geeksforgeeks.org/isoweekday-method-of-datetime-class-in-python/)
 [^7]: [Pythonhow](https://pythonhow.com/how/limit-floats-to-two-decimal-points/#:~:text=To%20limit%20a%20float%20to,resulting%20in%20the%20value%203.14)
+[^8]: [geeksforgeeks](https://www.geeksforgeeks.org/how-to-plot-normal-distribution-over-histogram-in-python/)
+[^9]: [Numpy](https://numpy.org/doc/stable/reference/generated/numpy.arange.html)
+[^10]: [w3schools](https://www.w3schools.com/python/matplotlib_intro.asp)
 
 
 
