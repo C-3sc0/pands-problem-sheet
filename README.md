@@ -6,14 +6,14 @@ My process for arriving at the solutions to the assigned tasks is described here
 ## **Table** **of** **Contents**
 
 1. [Weekly Tasks](https://github.com/C-3sc0/pands-problem-sheet#weekly-tasks-)
-    * [Hello World!](#HelloWorld)
-    * [Bank Currency Calculator](#BankCurrencyCalculator)
-    * [Bank Account Number Security](#BankAccountNumberSecurity)
-    * [Collatz](#Collatz)
-    * [Weekday Checker](#WeekdayChecker)
-    * [Square Root](#SquareRoot)
-    * [Counting 'e's in a Text File](#Counting'e'sinaTextFile)
-    * [Plotting](#Plotting) 
+    * [Hello World!](https://github.com/C-3sc0/pands-problem-sheet#hello-world-)
+    * [Bank Currency Calculator](https://github.com/C-3sc0/pands-problem-sheet#bank-currency-calculator-)
+    * [Bank Account Number Security](https://github.com/C-3sc0/pands-problem-sheet#bank-account-number-security-)
+    * [Collatz](https://github.com/C-3sc0/pands-problem-sheet#collatz-)
+    * [Weekday Checker](https://github.com/C-3sc0/pands-problem-sheet#weekday-checker-)
+    * [Square Root](https://github.com/C-3sc0/pands-problem-sheet#square-root-)
+    * [Counting 'e's in a Text File](https://github.com/C-3sc0/pands-problem-sheet#counting-e-s-in-a-text-file-)
+    * [Plotting](https://github.com/C-3sc0/pands-problem-sheet#plotting-) 
 
 
 # ***Weekly*** ***Tasks*** <a name="WeeklyTasks"></a>
@@ -26,7 +26,7 @@ This program, when run, will show the message "Hello World!". It serves as a sta
 
 ---
 
-### *Bank* *Currency* *Calculator* <a name="BankCurrencyCalculator"></a>
+## *Bank* *Currency* *Calculator* <a name="BankCurrencyCalculator"></a>
 
 >Write a program that asks the user to input 2 money amounts (in cents) and then calculates their sum.
 >The output is presented with a € sign and decimal point separating the euro and cent values of the amount
@@ -43,7 +43,7 @@ into my code.
 
 ---
 
-#### *Bank* *Account* *Number* *Security* <a name="BankAccountNumberSecurity"></a>
+### *Bank* *Account* *Number* *Security* <a name="BankAccountNumberSecurity"></a>
 
 > Write a program that reads in a 10 character account and ouputs the account number with only the last 4 digits showing (and the first 6 digits replaced with Xs)
 > Extra: Modify the program to deal with account numbers of any length
@@ -55,7 +55,7 @@ Instead of always displaying the last 4 digits, the program now shows 40% of the
 
 ---
 
-##### *Collatz* <a name="Collatz"></a>
+### *Collatz* <a name="Collatz"></a>
 
 >Write a program that asks the user to input any positive integer and outputs the successive values of the following calculation.
 >At each step calculate the next value by taking the current value and, if it is even, divide it by two, but if it is odd, multiply it by three and add one.
@@ -66,7 +66,7 @@ The *"if"* statement uses the modulus operation to determine if the number is ev
 
 ---
 
-###### *Weekday* *Checker* <a name="Weekday Checker"></a>
+### *Weekday* *Checker* <a name="Weekday Checker"></a>
 
 > Write a program that outputs whether or not today is a weekday. 
 
@@ -77,7 +77,7 @@ There it was discovered that by using *date.isoweekday()*[^6], where Monday is 1
 ---
 
 
-###### *Square* *Root* <a name="SquareRoot"></a>
+### *Square* *Root* <a name="SquareRoot"></a>
 
 > Write a program that takes a positive floating-point number as input and outputs an approximation of its square root.
 
@@ -88,7 +88,7 @@ To round the float number to 3 decimal points, the *round ()*[^7] has been used.
 ---
 
 
-###### *Counting* *'e'* *s* *in* *a* *Text* *File* <a name="Counting'e'sinaTextFile"></a>
+### *Counting* *'e'* *s* *in* *a* *Text* *File* <a name="Counting'e'sinaTextFile"></a>
 
 >Write a program that reads in a text file and outputs the number of e's it contains.
 
