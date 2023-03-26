@@ -5,7 +5,11 @@
 
 def bank():
     amount = int(input("Enter amount1: "))
+    while amount < 0:
+        amount = int(input("Invalid amount entered. Please enter a positive amount: "))
     amount1 = int(input("Enter amount2: "))
+    while amount1 < 0:
+        amount1 = int(input("Invalid amount entered. Please enter a positive amount: "))
     total = (amount + amount1)/100 
     return total
 
