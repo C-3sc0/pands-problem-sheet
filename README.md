@@ -28,13 +28,15 @@ This program, when run, will show the message "Hello World!". It serves as a sta
 
 ## *Bank* *Currency* *Calculator* <a name="BankCurrencyCalculator"></a>
 
->Write a program that asks the user to input 2 money amounts (in cents) and then calculates their sum.
+>Write a program, called **bank.py**, that asks the user to input 2 money amounts (in cents) and then calculates their sum.
 >The output is presented with a € sign and decimal point separating the euro and cent values of the amount
 
 This program is designed to perform basic currency calculations.
 
-The program's limitation is that it does not verify or check the user's input to ensure that the inputted values are indeed legitimate money amounts. It does not, for example, verify that the input numbers are non-negative integers or that they reflect valid monetary values.
-To resolve this problem, a *while* *loop*[^1] has been added to ask the user to enter a valid non-negative number after entering a negative amount. This guarantees that the program only operates on valid monetary values and returns the correct result. 
+The program defines a function called ```bank()``` that calculates the total of two amounts inputted by the users and returs their result in cents.
+The program's limitation is that it does not verify or check the user's input to ensure that the inputted values are indeed legitimate money amounts. It does not, for example, verify if the input numbers are non-negative integers or floating numbers.
+To resolve this problem, a *while* *loop*[^1] has been added to ask the user to enter a valid non-negative number after entering a negative amount. This guarantees that the program only operates on valid monetary values and returns the correct result.
+Furthermore, a Try and Excpet block has been added to handle cases where the user inputs a non-integer value, such as a floating number, and raise a ```ValueError``` excpeton with a custom error message.  
 
 One of the challenges of this program was finding a way to output the *€* *sign*. After a research on the web I found helpful information on **Stack** **Overflow**[^2] website whch offered various opton to solve the problem. I choose to incorporate the € Unicode glyph number: 
 ```
@@ -46,7 +48,7 @@ into my code.
 
 ### *Bank* *Account* *Number* *Security* <a name="BankAccountNumberSecurity"></a>
 
-> Write a program that reads in a 10 character account and ouputs the account number with only the last 4 digits showing (and the first 6 digits replaced with Xs)
+> Write a program, called **accounts.py**, that reads in a 10 character account and ouputs the account number with only the last 4 digits showing (and the first 6 digits replaced with Xs)
 > Extra: Modify the program to deal with account numbers of any length
 
 This program is designed to show the last 4 digits of a 10 digit bank account number, replacing the first 6 digits with an 'X'[^3]. However, the program's limitation was that it could not display the account numbers of any length, as it always showed only the last 4 digits. To overcome this limitation and fulfill the extra requirement, a different approach was adopted taking the percentages as reference.
@@ -58,7 +60,7 @@ Instead of always displaying the last 4 digits, the program now shows 40% of the
 
 ### *Collatz* <a name="Collatz"></a>
 
->Write a program that asks the user to input any positive integer and outputs the successive values of the following calculation.
+>Write a program, called **collatz.py**, that asks the user to input any positive integer and outputs the successive values of the following calculation.
 >At each step calculate the next value by taking the current value and, if it is even, divide it by two, but if it is odd, multiply it by three and add one.
 
 Even though the assignment did not expressly require it, a *while* *loop* was introduced to manage negative numbers that may have been entered incorrectly. 
@@ -69,7 +71,7 @@ The *"if"* statement uses the modulus operation to determine if the number is ev
 
 ### *Weekday* *Checker* <a name="Weekday Checker"></a>
 
-> Write a program that outputs whether or not today is a weekday. 
+> Write a program, called **weekday.py**, that outputs whether or not today is a weekday. 
 
 In order to complete the task, it was necessary to import the *datetime*[^5] module, so we could manipulate date and time.
 Thanks to the documentation of geeksforgeeks, it was able to find the missing piece to crack the code.
@@ -80,7 +82,7 @@ There it was discovered that by using *date.isoweekday()*[^6], where Monday is 1
 
 ### *Square* *Root* <a name="SquareRoot"></a>
 
-> Write a program that takes a positive floating-point number as input and outputs an approximation of its square root.
+> Write a program, called **squareroot.py**, that takes a positive floating-point number as input and outputs an approximation of its square root.
 
 Before being able to crack the code, few hours of research have been used to better understand how the "Newton's method for square roots" works. Website as [geeksforgeeks](https://www.geeksforgeeks.org/program-for-newton-raphson-method/) , [hackernoon](https://hackernoon.com/calculating-the-square-root-of-a-number-using-the-newton-raphson-method-a-how-to-guide-yr4e32zo), [tutorialsinhand](https://tutorialsinhand.com/Articles/python-program-to-find-square-root-of-a-number-using-newton-square-root-formula.aspx#:~:text=If%20a%20given%20number%20is,correct%20square%20root%20of%20N),[runestone](https://runestone.academy/ns/books/published/thinkcspy/MoreAboutIteration/NewtonsMethod.html) & an [Youtube](https://www.youtube.com/watch?v=szQUIRPrAgQ&ab_channel=mechtutorcom) Video have been used for research purpose.
 
@@ -94,7 +96,7 @@ To round the float number to 3 decimal points, the *round ()*[^7] has been used.
 
 ### *Counting* *'e'* *s* *in* *a* *Text* *File* <a name="Counting'e'sinaTextFile"></a>
 
->Write a program that reads in a text file and outputs the number of e's it contains.
+>Write a program, called **readTextFile.py**, that reads in a text file and outputs the number of e's it contains.
 
 This program needs users to provide the file name as an argument in the command line in order to view a particular text file.
 To ensure that the requested file is in the same directory as the program, the *sys* *method* was imported. Using the *sys.argv[1]* variable, it is defined that the filename is second argument when calling a program (*sys.argv[0]* is the program we are trying to start).
@@ -105,7 +107,7 @@ To count occurrences of both the lowercase letter 'e' and the uppercase letter '
 
 
 ### *Plotting* <a name="Plotting"></a>
->Write a program that displays:
+>Write a program, called **plottask.py**, that displays:
 >1. a histogram of a normal distribution of a 1000 values with a mean of 5 and standard deviation of 2, 
 >2. and a plot of the function  h(x)=x3 in the range [0, 10], on the one set of axes.
 
