@@ -28,7 +28,7 @@ This program, when run, will show the message `"Hello World!"`. It serves as a s
 <details>
 <summary>Output</summary>
 
-```ruby
+```python
    Hello World
 ```
 
@@ -47,7 +47,7 @@ To resolve this problem, a `while loop`[^1] has been added. If the inputted amou
 <details>
 <summary>Negative Number Input</summary>
 
-```ruby
+```python
 Enter amount1: -45
 Invalid amount entered. Please enter a positive amount.
 Enter amount1:  45
@@ -59,7 +59,7 @@ Furthermore, a `Try` and `Excpet` block has been added to handle cases where the
 <details>
 <summary>Non Integer Input</summary>
 
-```ruby
+```python
 Enter amount1: Hello world
 Invalid amount entered. Please enter a positive amount.
 Enter amount1:  78.5
@@ -73,7 +73,7 @@ One of the challenges of this program was finding a way to output the *€* *sig
 <details>
 <summary>€ symbol</summary>
 
-```ruby
+```python
 \u20ac
 ```
 
@@ -89,14 +89,14 @@ Instead of always displaying the last 4 digits, the program now shows `40%` of t
 <details>
 <summary>Input</summary>
 
-```ruby
+```python
 Please enter an account number (any length): 7894567852
 Please enter an account number (any length): 986532748659864531
 ```
 
 Output
 
-```ruby
+```python
 XXXXXX7852
 XXXXXXXXXXX9864531
 ````
@@ -112,7 +112,7 @@ Even though the assignment did not expressly require it, a `while loop` was intr
 <details>
 <summary> Negative number input </summary>
 
-```ruby
+```python
 Please enter a positive integer: -78
 Error! -78 is a Negative Number
 Try to add a ositive iteger: -56
@@ -143,14 +143,14 @@ As an extra, using the conditional statement `if`, I included a check to ensure 
 <details>
 <summary>Input</summary>
 
-```ruby
+```python
 Please enter a positive floating-point number: -89
 Perhaps you meant 89.0
 ```
 
 Output
 
-```ruby
+```python
 the square root of 89.0 is approx. 9.434
 ````
 
@@ -181,7 +181,7 @@ First, the code imports the two libraries using the `import` statement.
 <details>
 <summary>Libraries</summary>
 
-```ruby
+```python
 import numpy as np
 import matplotlib.pyplot as plt
 ```
@@ -196,9 +196,6 @@ The final step of the program saves the plot as an image file using the savefig(
 [^1]: As showed in Lesson: Topic 4 (Controlling the flow)
 [^2]: 2.Use Unicode glyph number: [StackOverflow](https://stackoverflow.com/questions/39935857/how-can-i-print-a-euro-%E2%82%AC-symbol-in-python)
 [^3]: is there a better way to mask a credit card number in python [StackOverflow](https://stackoverflow.com/questions/9730653/is-there-a-better-way-to-mask-a-credit-card-number-in-python) was used to understand better how to mask the first 6 digits of a Bank Account number.
-[^4]: gfact 50 python end parameter in print [geeksforgeeks](https://www.geeksforgeeks.org/gfact-50-python-end-parameter-in-print/) helps in understand better ho to use the 'end = " "' parameter.
-[^5]:python datatime [w3schools](https://www.w3schools.com/python/python_datetime.asp) helps in research and understand how to implement the datetime module.
-[^6]: isoweekday method of datetime class in python [geeksforgeeks](https://www.geeksforgeeks.org/isoweekday-method-of-datetime-class-in-python/)
 [^7]: Limit floats to two decimal point [Pythonhow](https://pythonhow.com/how/limit-floats-to-two-decimal-points/#:~:text=To%20limit%20a%20float%20to,resulting%20in%20the%20value%203.14)
 [^8]: [numpy](https://numpy.org/)
 [^9]: Matplotlib pyplot [W3schools](https://www.w3schools.com/python/matplotlib_pyplot.asp)
