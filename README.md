@@ -198,8 +198,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 ```
 </details>
-The Normal distrbution can be found using the *random.normal()* functon[^8], while range for the *h(x)=x3* function the*arange()* function from numpy library[^10] can be used.
-The title, and both the x and y axis were labeled using the functions *title()*, *xlabel()* and *ylabel()* respectively from the matplotlib.pyplot library[^11].
+The Normal distrbution can be found using the *random.normal()* functon[^10], while range for the *h(x)=x3* function the*arange()* function from numpy library[^11] can be used.
+The title, and both the x and y axis were labeled using the functions *title()*, *xlabel()* and *ylabel()* respectively from the matplotlib.pyplot library.
 The program then creates the plot using the hist() function to plot the normal distribution and the plot() function to plot the function h(x)=x3.
 The final step of the program saves the plot as an image file using the savefig() function and the file is saved in the same directory as the program that created it. The output of the program is an image of the plot for the user to view.
 
