@@ -15,8 +15,7 @@ def collatz(value):
         else:
             value = (value * 3 + 1)
     else:
-        print(value, end= " ") #adding end prameter in order to avoid the creation of a new line between the different int
-
+        print(value)
 
 
 value = int(input("Please enter a positive integer: "))
