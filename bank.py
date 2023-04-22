@@ -29,11 +29,13 @@ def bank():
             break
         except ValueError:
             print("Invalid amount entered. Please enter a positive integer.")
-    # calculate the total of the two amounts, divide by 100 (since we are using cents), and return the result
-    total = (amount + amount1) / 100 
+    total = amount + amount1
     return total
 
-# call the bank function and store the result in a variable called sum
 sum = bank()
+#get the total number of euros
+euro= sum // 100
+#get the number of cents remaining.
+cent = sum % 100
 # print the sum with a Euro symbol using Unicode (code point U+20AC)
-print(f'The sum of these is \u20ac{sum}')
+print(f'The sum of these is \u20ac{euro}.{cent:02d}') #:02d to always includes the 2 decimal places expeced fro a currency amount.
